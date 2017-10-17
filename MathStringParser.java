@@ -155,7 +155,10 @@ public class MathStringParser {
     }
 
     public static void main(String [] args) throws Exception {
-        System.out.println(evalExpression("1 + 12/2 * 5 + 2 -10 + 5 * 2"));
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the mathematical expression that you'd like as a string. Only +, -, /, * operations allowed ");
+        String expression = sc.next();
+        System.out.println(evalExpression(expression));
     }
 
 }
